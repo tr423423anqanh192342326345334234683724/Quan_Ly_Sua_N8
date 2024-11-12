@@ -14,7 +14,7 @@ namespace Quan_Ly_Sua_N8
         public SqlConnection conn;
         public void openConnection()
         {
-            conn = new SqlConnection("Server=DESKTOP-8DCO9H8;Database=QLKDSUA_nhom5;Integrated Security=True");
+            conn = new SqlConnection("Server=Khanh;Database=QLKDSUA_nhom5;Integrated Security=True");
             conn.Open();
         }
         public void closeConnection()
