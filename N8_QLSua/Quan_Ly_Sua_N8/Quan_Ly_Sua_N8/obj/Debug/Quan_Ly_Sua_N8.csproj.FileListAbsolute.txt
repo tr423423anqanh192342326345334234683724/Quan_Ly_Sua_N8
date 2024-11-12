@@ -1,0 +1,10 @@
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.exe.config
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.exe
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.pdb
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.AssemblyReference.cache
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.Properties.Resources.resources
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.QLBANSUA.resources
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.GenerateResource.cache
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.CoreCompileInputs.cache
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.exe
+D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.pdb
