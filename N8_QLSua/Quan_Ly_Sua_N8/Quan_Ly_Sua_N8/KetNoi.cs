@@ -14,7 +14,7 @@ namespace Quan_Ly_Sua_N8
         public SqlConnection conn;
         public void openConnection()
         {
-            conn = new SqlConnection("Server=Khanh;Database=QLKDSUA_nhom5;Integrated Security=True");
+            conn = new SqlConnection("Server=DESKTOP-8DCO9H8;Database=Quan_Ly_Sua_N8;Integrated Security=True");
             conn.Open();
         }
         public void closeConnection()
@@ -64,6 +64,31 @@ namespace Quan_Ly_Sua_N8
             {
                 closeConnection();
             }
+        }
+        public DataTable ReadData(string sql, SqlParameter[] sqlParameters = null)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                openConnection();
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    if (sqlParameters != null) cmd.Parameters.AddRange(sqlParameters);
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        dt.Load(reader);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                closeConnection();
+            }
+            return dt;
         }
     }
 }

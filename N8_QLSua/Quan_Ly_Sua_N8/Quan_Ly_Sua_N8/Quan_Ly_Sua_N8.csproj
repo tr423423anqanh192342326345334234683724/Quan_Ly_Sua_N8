@@ -152,6 +152,12 @@
     <EmbeddedResource Include="QL_KhachHang.resx">
       <DependentUpon>QL_KhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QL_SanPham.resx">
+      <DependentUpon>QL_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemSanPham.resx">
+      <DependentUpon>TimKiemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

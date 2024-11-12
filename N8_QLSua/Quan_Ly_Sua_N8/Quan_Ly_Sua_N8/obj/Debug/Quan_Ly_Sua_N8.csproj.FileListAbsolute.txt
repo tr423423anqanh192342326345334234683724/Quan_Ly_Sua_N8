@@ -8,3 +8,16 @@ D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Deb
 D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.CoreCompileInputs.cache
 D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.exe
 D:\Hoc phan UNETI\Hoc CODE visual\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.pdb
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.AssemblyReference.cache
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.Properties.Resources.resources
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.QLBANSUA.resources
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.QL_KhachHang.resources
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.QL_SanPham.resources
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.GenerateResource.cache
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.CoreCompileInputs.cache
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.exe
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.pdb
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.exe.config
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.exe
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.pdb
+D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.TimKiemSanPham.resources
