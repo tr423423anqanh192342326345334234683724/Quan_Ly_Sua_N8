@@ -1,0 +1,73 @@
+USE Quan_Ly_Sua_N8;
+
+-- 1. Tạo bảng NhanVien trước
+CREATE TABLE NhanVien (
+    MaNhanVien INT PRIMARY KEY IDENTITY(1,1),
+    HoTen NVARCHAR(100),
+    SoDienThoai NVARCHAR(15),
+    DiaChi NVARCHAR(255),
+    NgaySinh DATE
+);
+
+-- 2. Tạo bảng KhachHang
+CREATE TABLE KhachHang (
+    MaKhachHang INT PRIMARY KEY IDENTITY(1,1),
+    HoVaTen NVARCHAR(100),
+    SoDienThoai NVARCHAR(15),
+    DiaChi NVARCHAR(255)
+);
+
+-- 3. Tạo bảng SanPham
+CREATE TABLE SanPham (
+    MaSanPham INT PRIMARY KEY IDENTITY(1,1),
+    HangSanXuat NVARCHAR(100),
+    HanSuDung DATE,
+    MoTa NVARCHAR(255),
+    Gia DECIMAL(18, 2),
+    SoLuong INT,
+    LoaiSanPham NVARCHAR(100)
+);
+
+-- 4. Tạo bảng PhieuNhap
+CREATE TABLE PhieuNhap (
+    MaPhieu INT PRIMARY KEY IDENTITY(1,1),
+    MaNhanVien INT,
+    NgayNhap DATE,
+    TenNCC NVARCHAR(100),
+    Tong DECIMAL(18, 2),
+    FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien)
+);
+
+-- 5. Tạo bảng HoaDon
+CREATE TABLE HoaDon (
+    MaHoaDon INT PRIMARY KEY IDENTITY(1,1),
+    NgayBan DATE,
+    TongTien DECIMAL(18, 2),
+    MaNhanVien INT,
+    MaKhachHang INT,
+    FOREIGN KEY (MaNhanVien) REFERENCES NhanVien(MaNhanVien),
+    FOREIGN KEY (MaKhachHang) REFERENCES KhachHang(MaKhachHang)
+);
+
+-- 6. Tạo bảng ChiTietPhieuNhap
+CREATE TABLE ChiTietPhieuNhap (
+    MaPhieu INT,
+    MaSanPham INT,
+    SoLuong INT,
+    GiaNhap DECIMAL(18, 2),
+    GhiChu NVARCHAR(255),
+    PRIMARY KEY (MaPhieu, MaSanPham),
+    FOREIGN KEY (MaPhieu) REFERENCES PhieuNhap(MaPhieu),
+    FOREIGN KEY (MaSanPham) REFERENCES SanPham(MaSanPham)
+);
+
+-- 7. Tạo bảng ChiTietHoaDon
+CREATE TABLE ChiTietHoaDon (
+    MaHoaDon INT,
+    MaSanPham INT,
+    SoLuong INT,
+    GhiChu NVARCHAR(255),
+    PRIMARY KEY (MaHoaDon, MaSanPham),
+    FOREIGN KEY (MaHoaDon) REFERENCES HoaDon(MaHoaDon),
+    FOREIGN KEY (MaSanPham) REFERENCES SanPham(MaSanPham)
+);
