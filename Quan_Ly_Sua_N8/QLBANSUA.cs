@@ -16,5 +16,12 @@ namespace Quan_Ly_Sua_N8
         {
             InitializeComponent();
         }
+
+        private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QL_NhanVien qlnv = new QL_NhanVien();
+            qlnv.MdiParent = this;
+            qlnv.Show();
+        }
     }
 }
