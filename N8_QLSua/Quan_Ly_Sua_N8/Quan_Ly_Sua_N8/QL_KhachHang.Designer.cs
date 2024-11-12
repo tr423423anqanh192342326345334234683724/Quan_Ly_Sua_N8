@@ -30,6 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_thoat = new System.Windows.Forms.Button();
+            this.btn_xoa = new System.Windows.Forms.Button();
+            this.btn_sua = new System.Windows.Forms.Button();
+            this.btn_them = new System.Windows.Forms.Button();
             this.cbb_gt = new System.Windows.Forms.ComboBox();
             this.tb_dc = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,10 +44,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_them = new System.Windows.Forms.Button();
-            this.btn_sua = new System.Windows.Forms.Button();
-            this.btn_xoa = new System.Windows.Forms.Button();
-            this.btn_thoat = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgv_kh = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
@@ -83,6 +83,50 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách hàng";
+            // 
+            // btn_thoat
+            // 
+            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_thoat.Location = new System.Drawing.Point(629, 229);
+            this.btn_thoat.Name = "btn_thoat";
+            this.btn_thoat.Size = new System.Drawing.Size(78, 33);
+            this.btn_thoat.TabIndex = 25;
+            this.btn_thoat.Text = "Thoát";
+            this.btn_thoat.UseVisualStyleBackColor = true;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
+            // 
+            // btn_xoa
+            // 
+            this.btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_xoa.Location = new System.Drawing.Point(629, 164);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(78, 33);
+            this.btn_xoa.TabIndex = 24;
+            this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            // 
+            // btn_sua
+            // 
+            this.btn_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sua.Location = new System.Drawing.Point(629, 99);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(78, 33);
+            this.btn_sua.TabIndex = 23;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
+            // 
+            // btn_them
+            // 
+            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them.Location = new System.Drawing.Point(629, 35);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(78, 33);
+            this.btn_them.TabIndex = 22;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // cbb_gt
             // 
@@ -174,46 +218,6 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Mã Khách Hàng";
             // 
-            // btn_them
-            // 
-            this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_them.Location = new System.Drawing.Point(629, 35);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(78, 33);
-            this.btn_them.TabIndex = 22;
-            this.btn_them.Text = "Thêm";
-            this.btn_them.UseVisualStyleBackColor = true;
-            // 
-            // btn_sua
-            // 
-            this.btn_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sua.Location = new System.Drawing.Point(629, 99);
-            this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(78, 33);
-            this.btn_sua.TabIndex = 23;
-            this.btn_sua.Text = "Sửa";
-            this.btn_sua.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoa.Location = new System.Drawing.Point(629, 164);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(78, 33);
-            this.btn_xoa.TabIndex = 24;
-            this.btn_xoa.Text = "Xóa";
-            this.btn_xoa.UseVisualStyleBackColor = true;
-            // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.Location = new System.Drawing.Point(629, 229);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(78, 33);
-            this.btn_thoat.TabIndex = 25;
-            this.btn_thoat.Text = "Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgv_kh);
@@ -233,6 +237,7 @@
             this.dgv_kh.RowTemplate.Height = 24;
             this.dgv_kh.Size = new System.Drawing.Size(774, 264);
             this.dgv_kh.TabIndex = 0;
+            this.dgv_kh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_kh_CellClick);
             // 
             // QL_KhachHang
             // 
