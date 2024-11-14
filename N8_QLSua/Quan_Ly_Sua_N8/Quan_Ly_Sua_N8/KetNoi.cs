@@ -11,27 +11,34 @@ namespace Quan_Ly_Sua_N8
 {
     internal class KetNoi
     {
-        public SqlConnection conn;
-        public void openConnection()
+        SqlConnection conn;
+        string kn = @"Data Source=Khanh;Initial Catalog=Quan_Ly_Sua_N8;Integrated Security=True";
+        public void ketnoi()
         {
-            conn = new SqlConnection("Server=DESKTOP-8DCO9H8;Database=Quan_Ly_Sua_N8;Integrated Security=True");
+            conn = new SqlConnection(kn);
             conn.Open();
         }
-        public void closeConnection()
+        public void dongkn()
         {
             conn.Close();
         }
-        public DataTable ReadData(string sql)
+
+        //CRUD
+        public DataTable Readdata(string sql, SqlParameter[] sqlParameters = null)
         {
             DataTable dt = new DataTable();
             try
             {
-                openConnection();
+                ketnoi();
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    if (sqlParameters != null)
                     {
-                        dt.Load(reader);
+                        cmd.Parameters.AddRange(sqlParameters);
+                    }
+                    using (SqlDataReader sr = cmd.ExecuteReader())
+                    {
+                        dt.Load(sr);
                     }
                 }
             }
@@ -41,42 +48,22 @@ namespace Quan_Ly_Sua_N8
             }
             finally
             {
-                closeConnection();
+                dongkn();
             }
             return dt;
         }
-        public void CreateUpdateDelete(string sql, SqlParameter[] sqlParameters = null)
+
+        public void CreateUpdateDelete(string table, SqlParameter[] sqlParameters = null)
         {
             try
             {
-                openConnection();
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                ketnoi();
+                using (SqlCommand cmd = new SqlCommand(table, conn))
                 {
-                    if (sqlParameters != null) cmd.Parameters.AddRange(sqlParameters);
-                    cmd.ExecuteNonQuery();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                closeConnection();
-            }
-        }
-        public DataTable ReadData(string sql, SqlParameter[] sqlParameters = null)
-        {
-            DataTable dt = new DataTable();
-            try
-            {
-                openConnection();
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
-                {
-                    if (sqlParameters != null) cmd.Parameters.AddRange(sqlParameters);
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    if (sqlParameters != null)
                     {
-                        dt.Load(reader);
+                        cmd.Parameters.AddRange(sqlParameters);
+                        cmd.ExecuteNonQuery();
                     }
                 }
             }
@@ -86,9 +73,8 @@ namespace Quan_Ly_Sua_N8
             }
             finally
             {
-                closeConnection();
+                dongkn();
             }
-            return dt;
         }
     }
 }

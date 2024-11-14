@@ -18,7 +18,7 @@ namespace Quan_Ly_Sua_N8
         public DataTable LayDSNV()
         {
             string sql = "SELECT * FROM NhanVien";
-            return kn.ReadData(sql);
+            return kn.Readdata(sql);
         }
         public void CreateNV(string HoTen, DateTime NgaySinh, string GioiTinh, string DiaChi, string SoDienThoai)
         {
@@ -72,7 +72,7 @@ namespace Quan_Ly_Sua_N8
             {
             new SqlParameter("@MaNhanVien", MaNhanVien)
             };
-            return kn.ReadData(sql, sp);
+            return kn.Readdata(sql, sp);
         }
         public DataTable TimKiemTen(string HoTen)
         {
@@ -81,7 +81,12 @@ namespace Quan_Ly_Sua_N8
             {
             new SqlParameter("@HoTen", "%" + HoTen + "%")
             };
-            return kn.ReadData(sql, sp);
+            return kn.Readdata(sql,sp);
+        }
+        public DataTable GetThuNhapNhanVien()
+        {
+            string query = "SELECT MaNhanVien, HoTen, DiaChi,SoNgayDiLam  FROM NhanVien";
+            return kn.Readdata(query);
         }
 
     }

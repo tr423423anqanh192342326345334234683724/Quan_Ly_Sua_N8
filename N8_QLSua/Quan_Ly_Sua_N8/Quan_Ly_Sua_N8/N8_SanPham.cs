@@ -20,7 +20,7 @@ namespace Quan_Ly_Sua_N8
         public DataTable LayDuLieu()
         {
             string sql = "SELECT * FROM SanPham";
-            return kn.ReadData(sql);
+            return kn.Readdata(sql);
         }
         
         public void ThemSP(string HangSanXuat, DateTime HanSuDung, string MoTa, decimal Gia, int SoLuong, string LoaiSanPham, byte[] HinhAnh)
@@ -89,7 +89,7 @@ namespace Quan_Ly_Sua_N8
                 new SqlParameter("@TuKhoa", "%" + tuKhoa + "%")
             };
 
-            return kn.ReadData(sql, sqlParams);
+            return kn.Readdata(sql, sqlParams);
         }
     }    
 }

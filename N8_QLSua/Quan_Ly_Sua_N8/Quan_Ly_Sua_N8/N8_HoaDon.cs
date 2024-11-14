@@ -21,9 +21,9 @@ namespace Quan_Ly_Sua_N8
             string sql = "SELECT * FROM HoaDon";
             return kn.Readdata(sql);
         }
-        public void ThemHD(DateTime ngayban, int manv, int makh, int masp, int soluong, Decimal tongtien)
+        public void ThemHD(DateTime ngayban, int manv, int makh, int masp, int soluong, Decimal DonGia)
         {
-            string sql = "INSERT INTO HoaDon (NgayBan, MaNhanVien, MaKhachHang, MaSanPham, SoLuong, TongTien) VALUES (@NgayBan, @MaNhanVien, @MaKhachHang, @MaSanPham, @SoLuong, @TongTien )";
+            string sql = "INSERT INTO HoaDon (NgayBan, MaNhanVien, MaKhachHang, MaSanPham, SoLuong, DonGia) VALUES (@NgayBan, @MaNhanVien, @MaKhachHang, @MaSanPham, @SoLuong, @DonGia )";
             SqlParameter[] sqlParameters = new SqlParameter[]
             {
                 new SqlParameter("@NgayBan", ngayban),
@@ -31,13 +31,13 @@ namespace Quan_Ly_Sua_N8
                 new SqlParameter("@MaKhachHang", makh),
                 new SqlParameter("@MaSanPham", masp),
                 new SqlParameter("@SoLuong", soluong),
-                new SqlParameter("@TongTien", tongtien)
+                new SqlParameter("@DonGia", DonGia)
             };
             kn.CreateUpdateDelete(sql, sqlParameters);
         }
-        public void SuaHD(int mahd, DateTime ngayban, int manv, int makh, int masp, int soluong, Decimal tongtien)
+        public void SuaHD(int mahd, DateTime ngayban, int manv, int makh, int masp, int soluong, Decimal DonGia)
         {
-            string sql = "UPDATE HoaDon SET NgayBan = @NgayBan, MaNhanVien = @MaNhanVien, MaKhachHang = @MaKhachHang, MaSanPham = @MaSanPham, SoLuong = @SoLuong, TongTien = @TongTien WHERE MaHoaDon = @MaHoaDon";
+            string sql = "UPDATE HoaDon SET NgayBan = @NgayBan, MaNhanVien = @MaNhanVien, MaKhachHang = @MaKhachHang, MaSanPham = @MaSanPham, SoLuong = @SoLuong, DonGia = @DonGia WHERE MaHoaDon = @MaHoaDon";
             SqlParameter[] sqlParameters = new SqlParameter[]
             {
                 new SqlParameter("@MaHoaDon", mahd),
@@ -46,7 +46,7 @@ namespace Quan_Ly_Sua_N8
                 new SqlParameter("@MaKhachHang", makh),
                 new SqlParameter("@MaSanPham", masp),
                 new SqlParameter("@SoLuong", soluong),
-                new SqlParameter("@TongTien", tongtien)
+                new SqlParameter("@DonGia", DonGia)
             };
             kn.CreateUpdateDelete(sql, sqlParameters);
         }
@@ -58,6 +58,29 @@ namespace Quan_Ly_Sua_N8
                 new SqlParameter("@MaHoaDon", mahd)
             };
             kn.CreateUpdateDelete(sql, sqlParameters);
+        }
+        public DataTable GetHoaDonThuNhapTheoThang(string thangnam)
+        {
+            string query = "SELECT NgayBan, TongTien FROM HoaDon WHERE FORMAT(NgayBan, 'MM/yyyy') = @ThangNam";
+            SqlParameter[] sqlParams = new SqlParameter[]
+            {
+                new SqlParameter("@ThangNam", thangnam)
+            };
+            return kn.Readdata(query, sqlParams);
+        }
+        public DataTable GetHoaDonThuNhapTheoNam(string nam)
+        {
+            string query = "SELECT NgayBan, TongTien FROM HoaDon WHERE YEAR(NgayBan) = @Nam";
+            SqlParameter[] sqlParams = new SqlParameter[]
+            {
+                new SqlParameter("@Nam", nam)
+            };
+            return kn.Readdata(query, sqlParams);
+        }
+        public DataTable GetHoaDonThuNhap()
+        {
+            string query = "SELECT NgayBan, TongTien FROM HoaDon";
+            return kn.Readdata(query);
         }
     }
 }
