@@ -20,9 +20,9 @@ namespace Quan_Ly_Sua_N8
             string sql = "SELECT * FROM NhanVien";
             return kn.Readdata(sql);
         }
-        public void CreateNV(string HoTen, DateTime NgaySinh, string GioiTinh, string DiaChi, string SoDienThoai)
+        public void CreateNV(string HoTen, DateTime NgaySinh, string GioiTinh, string DiaChi, string SoDienThoai, byte[] HinhAnh, decimal SoNgayDiLam)
         {
-            string sql = "INSERT INTO NhanVien (HoTen, NgaySinh, GioiTinh, DiaChi, SoDienThoai) VALUES (@a, @b, @c, @d, @e)";
+            string sql = "INSERT INTO NhanVien (HoTen, NgaySinh, GioiTinh, DiaChi, SoDienThoai, HinhAnh, SoNgayDiLam) VALUES (@a, @b, @c, @d, @e, @h, @n)";
 
 
             SqlParameter[] sp = new SqlParameter[]
@@ -32,6 +32,9 @@ namespace Quan_Ly_Sua_N8
                  new SqlParameter("@c", GioiTinh),
                  new SqlParameter("@d", DiaChi),
                  new SqlParameter("@e", SoDienThoai),
+                 new SqlParameter("@h", (object)HinhAnh ?? DBNull.Value),
+                 new SqlParameter("@n", SoNgayDiLam)
+
 
             };
             kn.CreateUpdateDelete(sql, sp);
@@ -40,9 +43,9 @@ namespace Quan_Ly_Sua_N8
 
 
 
-        public void UpdateNV(int MaNhanVien, string HoTen, DateTime NgaySinh, string GioiTinh, string DiaChi, string SoDienThoai)
+        public void UpdateNV(int MaNhanVien, string HoTen, DateTime NgaySinh, string GioiTinh, string DiaChi, string SoDienThoai, byte[] HinhAnh, decimal SoNgayDiLam)
         {
-            string sql = "UPDATE NhanVien SET HoTen=@a,NgaySinh=@b,GioiTinh=@c,DiaChi=@d,SoDienThoai=@e WHERE MaNhanVien = @f";
+            string sql = "UPDATE NhanVien SET HoTen=@a,NgaySinh=@b,GioiTinh=@c,DiaChi=@d,SoDienThoai=@e, HinhAnh = @h, SoNgayDiLam = @n WHERE MaNhanVien = @f";
             SqlParameter[] sp = new SqlParameter[]
                  {
                  new SqlParameter("@a", HoTen),
@@ -51,6 +54,8 @@ namespace Quan_Ly_Sua_N8
                  new SqlParameter("@d", DiaChi),
                  new SqlParameter("@e", SoDienThoai),
                  new SqlParameter("@f", MaNhanVien),
+                  new SqlParameter("@h", (object)HinhAnh ?? DBNull.Value),
+                 new SqlParameter("@n", SoNgayDiLam)
 
                  };
             kn.CreateUpdateDelete(sql, sp);

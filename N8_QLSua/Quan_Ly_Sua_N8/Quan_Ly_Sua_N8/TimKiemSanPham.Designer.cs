@@ -37,7 +37,11 @@
             this.btnThoatTimKiem = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ptbanh = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbanh)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,17 +122,39 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(277, 9);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label4.Location = new System.Drawing.Point(205, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 16);
+            this.label4.Size = new System.Drawing.Size(299, 36);
             this.label4.TabIndex = 8;
             this.label4.Text = "Tìm Kiếm Sản Phẩm";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.ptbanh);
+            this.groupBox1.Location = new System.Drawing.Point(533, 42);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(165, 168);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Hình ảnh";
+            // 
+            // ptbanh
+            // 
+            this.ptbanh.Location = new System.Drawing.Point(6, 21);
+            this.ptbanh.Name = "ptbanh";
+            this.ptbanh.Size = new System.Drawing.Size(151, 135);
+            this.ptbanh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbanh.TabIndex = 0;
+            this.ptbanh.TabStop = false;
             // 
             // TimKiemSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnThoatTimKiem);
@@ -141,6 +167,8 @@
             this.Name = "TimKiemSanPham";
             this.Text = "TimKiemSanPham";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbanh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +185,7 @@
         private System.Windows.Forms.Button btnThoatTimKiem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.PictureBox ptbanh;
     }
 }

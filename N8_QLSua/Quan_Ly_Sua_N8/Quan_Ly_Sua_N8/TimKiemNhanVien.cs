@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,22 +21,56 @@ namespace Quan_Ly_Sua_N8
             cbchon.Items.Add("MaKhachHang");
             cbchon.Items.Add("HoVaTen");
             cbchon.SelectedIndex = 0;
-
         }
 
         private void btnTIm_Click(object sender, EventArgs e)
         {
             string giatri = cbchon.SelectedItem.ToString();
             string tim = txtTimKiem.Text.Trim();
+
+            // Biến lưu dữ liệu tìm kiếm
+            DataTable ketQua;
+
             if (giatri == "MaKhachHang")
             {
-                dgvDSNV.DataSource = nv.TimKiemMa(tim);
+                ketQua = nv.TimKiemMa(tim);
             }
-            if (giatri == "HoVaTen")
+            else if (giatri == "HoVaTen")
             {
-                dgvDSNV.DataSource = nv.TimKiemTen(tim);
+                ketQua = nv.TimKiemTen(tim);
+            }
+            else
+            {
+                return;
             }
 
+            // Hiển thị dữ liệu lên DataGridView
+            dgvDSNV.DataSource = ketQua;
+
+            // Kiểm tra nếu có dữ liệu tìm thấy
+            if (ketQua.Rows.Count > 0)
+            {
+                // Lấy dữ liệu ảnh từ dòng đầu tiên của kết quả
+                byte[] imageData = (byte[])ketQua.Rows[0]["HinhAnh"];
+
+                if (imageData != null)
+                {
+                    // Chuyển đổi byte[] thành Image và hiển thị trong PictureBox
+                    using (MemoryStream ms = new MemoryStream(imageData))
+                    {
+                        ptbanh.Image = Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    ptbanh.Image = null; // Nếu không có ảnh thì xóa ảnh trong PictureBox
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy nhân viên!");
+                ptbanh.Image = null;
+            }
         }
 
         private void TimKiemNhanVien_Load(object sender, EventArgs e)
