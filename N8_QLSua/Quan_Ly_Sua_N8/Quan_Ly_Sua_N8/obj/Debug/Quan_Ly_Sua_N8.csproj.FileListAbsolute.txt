@@ -21,3 +21,37 @@ D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin
 D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.exe
 D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.pdb
 D:\nam4_ki1\TH_NET\btl\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.TimKiemSanPham.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.exe.config
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.exe
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Quan_Ly_Sua_N8.pdb
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.AssemblyReference.cache
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.Properties.Resources.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.QLBANSUA.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.QL_KhachHang.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.QL_SanPham.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.TimKiemSanPham.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.GenerateResource.cache
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.CoreCompileInputs.cache
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.exe
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.pdb
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.TimKiemKhachHang.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.QL_HoaDon.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.ThuNhapCuaHang.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.csproj.ResolveComReference.cache
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_Sua_N8.ThuNhapNhanVien.resources
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\EPPlus.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\EPPlus.Interfaces.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\EPPlus.System.Drawing.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.Buffers.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.Memory.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.Numerics.Vectors.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\EPPlus.xml
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.Buffers.xml
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.Memory.xml
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.Numerics.Vectors.xml
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Hoc phan UNETI\Hoc CODE visual\QLBSUA_N8\Quan_Ly_Sua_N8\N8_QLSua\Quan_Ly_Sua_N8\Quan_Ly_Sua_N8\obj\Debug\Quan_Ly_.DA71D902.Up2Date
