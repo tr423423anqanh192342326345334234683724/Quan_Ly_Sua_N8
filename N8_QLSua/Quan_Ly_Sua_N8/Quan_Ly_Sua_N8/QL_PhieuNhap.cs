@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Quan_Ly_Sua_N8
@@ -37,10 +30,10 @@ namespace Quan_Ly_Sua_N8
             {
                 pn.ThemPhieu(
                     int.Parse(tb_manv.Text),
-                    int.Parse(tb_masp.Text),
+                    int.Parse(tb_masp.Text),  
                     dt_ngaynhap.Value,
                     tb_nhacungcap.Text,
-                    int.Parse(tb_soluong.Text)
+                    int.Parse(tb_soluong.Text) 
                 );
                 LoadData();
                 MessageBox.Show("Thêm phiếu nhập thành công!");
@@ -58,7 +51,7 @@ namespace Quan_Ly_Sua_N8
                 pn.SuaPhieu(
                     int.Parse(tb_maphieu.Text),
                     int.Parse(tb_manv.Text),
-                    int.Parse(tb_masp.Text),
+                    int.Parse(tb_masp.Text),   
                     dt_ngaynhap.Value,
                     tb_nhacungcap.Text,
                     int.Parse(tb_soluong.Text)
@@ -93,7 +86,7 @@ namespace Quan_Ly_Sua_N8
 
         private void dgvpn_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvpn.Rows[e.RowIndex];
@@ -104,7 +97,7 @@ namespace Quan_Ly_Sua_N8
                 dt_ngaynhap.Value = Convert.ToDateTime(row.Cells["NgayNhap"].Value);
                 tb_nhacungcap.Text = row.Cells["TenNCC"].Value.ToString();
                 tb_soluong.Text = row.Cells["SoLuong"].Value.ToString();
-                tb_tong.Text = row.Cells["TongTien"].Value.ToString();
+                tb_tong.Text = row.Cells["TongTien"].Value.ToString(); 
             }
         }
     }

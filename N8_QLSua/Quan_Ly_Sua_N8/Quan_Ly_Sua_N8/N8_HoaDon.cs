@@ -82,5 +82,14 @@ namespace Quan_Ly_Sua_N8
             string query = "SELECT NgayBan, TongTien FROM HoaDon";
             return kn.Readdata(query);
         }
+        public DataTable TimKiemHoaDon(int mahd)
+        {
+            string sql = "SELECT * FROM HoaDon WHERE MaHoaDon = @MaHoaDon";
+            SqlParameter[] sqlParams = new SqlParameter[]
+            {
+                new SqlParameter("@MaHoaDon", mahd)
+            };
+            return kn.Readdata(sql, sqlParams);
+        }
     }
 }

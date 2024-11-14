@@ -12,9 +12,45 @@ namespace Quan_Ly_Sua_N8
 {
     public partial class TimKiemPhieuNhap : Form
     {
+        private N8_PhieuNhap pn = new N8_PhieuNhap();
         public TimKiemPhieuNhap()
         {
             InitializeComponent();
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (int.TryParse(txtTimKiem.Text, out int maPhieu))
+                {
+                    DataTable dt = pn.TimKiemPhieu(maPhieu);
+                    dgvtkiempn.DataSource = dt;
+
+                    if (dt.Rows.Count == 0)
+                    {
+                        MessageBox.Show("Không tìm thấy phiếu nhập với mã phiếu này.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Mã phiếu không hợp lệ.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TimKiemPhieuNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

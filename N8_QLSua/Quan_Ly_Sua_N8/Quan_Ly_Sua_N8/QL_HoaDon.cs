@@ -81,5 +81,10 @@ namespace Quan_Ly_Sua_N8
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
+
+        private void QL_HoaDon_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
     }
 }
